@@ -1,2 +1,6 @@
 #!/bin/bash
-echo "hello $(whoami)"
+# Get the current user: prefer $USER, fallback to whoami if needed
+user="${USER:-$(whoami)}"
+
+# Print greeting without extra characters
+printf "hello %s" "$user"
