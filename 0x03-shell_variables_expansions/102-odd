@@ -1,2 +1,2 @@
-#!/bin/bash
-awk 'NR % 2 == 1'
+#!/usr/bin/awk -f
+NR % 2 == 1
